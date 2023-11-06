@@ -95,28 +95,17 @@ alias $LAST_READ_LINE          $_
 # <code>$stdout</code>.
 alias $DEFAULT_OUTPUT          $>
 
-# An object that provides access to the concatenation
-# of the contents of all the files
-# given as command-line arguments, or <code>$stdin</code>
-# (in the case where there are no
-# arguments). <code>$<</code> supports methods similar to a
-# File object:
-# +inmode+, +close+,
-# <code>closed?</code>, +each+,
-# <code>each_byte</code>, <code>each_line</code>,
-# +eof+, <code>eof?</code>, +file+,
-# +filename+, +fileno+,
-# +getc+, +gets+, +lineno+,
-# <code>lineno=</code>, +path+,
-# +pos+, <code>pos=</code>,
-# +read+, +readchar+,
-# +readline+, +readlines+,
-# +rewind+, +seek+, +skip+,
-# +tell+, <code>to_a</code>, <code>to_i</code>,
-# <code>to_io</code>, <code>to_s</code>, along with the
-# methods in Enumerable. The method +file+
-# returns a File object for the file currently
-# being read. This may change as <code>$<</code> reads
+# An object that provides access to the concatenation of the contents
+# of all the files given as command-line arguments, or
+# <code>$stdin</code> (in the case where there are no
+# arguments). <code>$<</code> supports methods similar to a File
+# object: +inmode+, +close+, +closed?+, +each+, +each_byte+,
+# +each_line+, +eof+, +eof?+, +file+, +filename+, +fileno+, +getc+,
+# +gets+, +lineno+, +lineno=+, +path+, +pos+, +pos=+, +read+,
+# +readchar+, +readline+, +readlines+, +rewind+, +seek+, +skip+,
+# +tell+, +to_a+, +to_i+, +to_io+, +to_s+, along with the methods in
+# Enumerable. The method +file+ returns a File object for the file
+# currently being read. This may change as <code>$<</code> reads
 # through the files on the command line. Read only.
 alias $DEFAULT_INPUT           $<
 
